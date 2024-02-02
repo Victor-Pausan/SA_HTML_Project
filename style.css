@@ -17,7 +17,7 @@ body{
     top: 0;
     height: 7rem;
     background-color:#0a1a2e;
-    z-index: 1;
+    z-index: 999;
 }
 
 .nav {
@@ -37,6 +37,63 @@ body{
     margin-left: 9rem;
     padding-top: 2.5rem;
     color: white;
+}
+
+.nav-title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-section{
+    position:relative;
+    text-align: center;
+    display: flex;
+}
+
+.main-title{
+    position:absolute;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    top: 28rem;
+    left: 7rem;
+    padding: 15px 15px;
+    color:white;
+    text-align: center;
+}
+
+.secondary-section{
+    position:relative;
+    display: flex;
+}
+
+.square{
+    position: absolute;
+    top: 5rem;
+    left:5rem;
+    background-color:#fff;
+    padding: 80px 80px;
+    max-width: 450px;
+    max-height:450px;
+}
+
+.square-title{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    line-height: 1.1;
+    color: #000;
+    margin: 0 0 24px;
+    
+}
+
+.square-p{
+    font-size: 1.2rem;
+    margin: 0 0 24px;
+    text-wrap: wrap;
+}
+
+.third-section{
+    position:relative;
+    display:flex;
 }
 
 .footer{
