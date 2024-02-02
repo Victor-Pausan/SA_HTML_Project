@@ -52,8 +52,44 @@ body{
     gap: 40px;
 }
 
+@media (max-width: 976px) {
+    .nav {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        justify-content: flex-start;
+        flex-direction: row;
+        padding: 0 1rem;
+    }
+    
+    .nav-list{
+        display:flex;
+        justify-content:flex-end;
+        margin-left:auto;
+        font-size: 20px;
+        color:white;
+        list-style-type: none;
+        font-family: Arial, Helvetica, sans-serif;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 612px){
+    .nav-list{
+        display:flex;
+        justify-content:flex-end;
+        flex-direction: column;
+        margin-left:auto;
+        font-size: 20px;
+        color:white;
+        list-style-type: none;
+        font-family: Arial, Helvetica, sans-serif;
+        gap: 4px;
+    }
+}
+
 .main-section{
-    position:relative;
+    position:sticky;
     text-align: center;
     display: flex;
 }
@@ -69,8 +105,21 @@ body{
     text-align: center;
 }
 
+@media (max-width: 976px) {
+    .main-title{
+        position:absolute;
+        font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        color:white;
+        text-align: center;
+    }
+}
+
 .secondary-section{
-    position:relative;
+    position:sticky;
     display: flex;
 }
 
@@ -101,8 +150,50 @@ body{
     text-wrap: wrap;
 }
 
+@media (max-width:976px) {
+    .square{
+        left:1rem;
+        bottom:3rem;
+        padding: 50px 50px;
+        max-width:650px;
+    }
+
+    .square-title{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 612px){
+    .square{
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        background-color:#fff;
+        padding: 20px 20px;
+        max-width:340px;
+        font-family:Arial, Helvetica, sans-serif;
+        overflow:scroll;
+    }
+
+    .square-title{
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: -.01em;
+        line-height: 1.1;
+        color: #000;
+        margin: 0 0 12px;
+        
+    }
+    
+    .square-p{
+        font-size: 1rem;
+        margin: 0 0 24px;
+        text-wrap: wrap;
+    }
+}
+
 .third-section{
-    position:relative;
+    position:sticky;
     display: flex;
 }
 
@@ -168,6 +259,8 @@ body{
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
+        padding-left: 0rem;
+        margin: 0;
         align-items: center;
     }
 }
