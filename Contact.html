@@ -32,10 +32,8 @@
             </nav>
         </header>
         <main class="main">
-            <div class="main-title">
-                <h1>CONTACT US</h1>
-            </div>
             <div class="main-content">
+                <h1>CONTACT US</h1>
                 <h2>Email:</h2>
                 <p>anchorathletics@iron.com</p>
                 <br>
@@ -52,8 +50,26 @@
                 <p>+1 (207) 401 1908</p>
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.140104702882!2d-69.64560042391108!3d43.85292467109335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cad98e229b289ef%3A0x8b60318191192084!2s16%20Lakeview%20Rd%2C%20Boothbay%20Harbor%2C%20ME%2004538%2C%20Statele%20Unite%20ale%20Americii!5e0!3m2!1sro!2sro!4v1706900766848!5m2!1sro!2sro" width="390" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.140104702882!2d-69.64560042391108!3d43.85292467109335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cad98e229b289ef%3A0x8b60318191192084!2s16%20Lakeview%20Rd%2C%20Boothbay%20Harbor%2C%20ME%2004538%2C%20Statele%20Unite%20ale%20Americii!5e0!3m2!1sro!2sro!4v1706900766848!5m2!1sro!2sro" width="450" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <form class="contact-form" action="/submit_form" method="post">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first_name" required>
+        
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last_name" required>
+        
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit">Send Message</button>
+            </form>
         </main>
         <footer class="footer">
             <div class="footer-content">

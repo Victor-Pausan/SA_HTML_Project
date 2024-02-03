@@ -89,40 +89,105 @@ body{
 }
 
 .main{
-    height:1000px;
+    min-height:1000px;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+
 }
 
-.main-title{
-    position:absolute;
-    top: 10%;
-    left: 10%; 
-    transform: translate(-10%, -10%);
+.main-content, .contact-form, .map{
+    position: relative;
+    width: 30%; /* Adjust the width as necessary */
+    margin-top: 5%; /* Adjust the margin as necessary */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-content{
-    position:absolute;
-    top: 25%;
-    left: 15%; 
-    transform: translate(-15%, -25%);
-    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+    width:20%;
+}
+
+.main-content h1{
+    margin-bottom:30px;
+    margin-left:-30px;
+}
+
+/* Position the form in the middle */
+.contact-form {
+    order: 2; /* Ensures that the form is placed between the content and map in the flexbox layout */
+    padding: 10px 20px;
+    background-color: #fff;
+    max-height: 500px;
 }
 
 .map{
-    position:absolute;
-    top: 20%;
-    left: 70%; 
-    transform: translate(-70%, -20%);
+    order: 3;
+    width: calc(30% - 40px);
+    margin-top: 5%;
 }
 
+.map iframe{
+    width:100%;
+}
+
+/* Styles for the form elements */
+form label,
+form input,
+form textarea,
+form button {
+    display: block; /* Makes form elements stack vertically */
+    width: 100%; /* Makes form elements take full width of their container */
+    margin-bottom: 10px; /* Adds space between form elements */
+}
+
+form input,
+form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for smaller screens */
 @media (max-width: 612px){
-.map{
-    position:absolute;
-    top: 90%;
-    left: 25%; 
-    transform: translate(-25%, -80%);
-}
+    .main-content, .contact-form, .map {
+        width: 100%; /* Each element takes full width */
+        margin-top: 20px; /* Adds more space between stacked elements */
+    }
+
+    .map iframe{
+        width:100%;
+    }
+
+    .main-title {
+        position: static;
+        transform: none;
+        margin-bottom: 20px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    /* Reset order on smaller screens for a logical top-down layout */
+    .main-content, .contact-form, .map {
+        order: unset;
+    }
 }
 
 .footer{
