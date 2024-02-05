@@ -3,13 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #d8dee5;
 }
 
 #page-container {
     position: relative;
-    min-height: 100vh;
 }
 
 .header {
@@ -38,14 +38,14 @@ body{
 .nav-title{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 1rem; /* You can adjust this value as needed */
+    margin: 0 1rem;
 }
 
 .nav-list{
     display:flex;
     justify-content:flex-end;
     margin-left:auto;
-    font-size: 30px;
+    font-size: 2vw;
     color:white;
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -54,36 +54,19 @@ body{
 
 @media (max-width: 976px) {
     .nav {
-        display: flex;
-        align-items: center;
-        height: inherit;
-        justify-content: flex-start;
-        flex-direction: row;
         padding: 0 1rem;
     }
     
     .nav-list{
-        display:flex;
-        justify-content:flex-end;
-        margin-left:auto;
         font-size: 20px;
-        color:white;
-        list-style-type: none;
-        font-family: Arial, Helvetica, sans-serif;
         gap: 10px;
     }
 }
 
 @media (max-width: 612px){
     .nav-list{
-        display:flex;
-        justify-content:flex-end;
         flex-direction: column;
-        margin-left:auto;
         font-size: 20px;
-        color:white;
-        list-style-type: none;
-        font-family: Arial, Helvetica, sans-serif;
         gap: 4px;
     }
 }
@@ -96,7 +79,7 @@ body{
 
 .main-title{
     position:absolute;
-    font-size: 50px;
+    font-size: 4vw;
     font-family:Arial, Helvetica, sans-serif;
     top: 50%;
     left: 50%; 
@@ -107,14 +90,7 @@ body{
 
 @media (max-width: 976px) {
     .main-title{
-        position:absolute;
         font-size: 20px;
-        font-family:Arial, Helvetica, sans-serif;
-        top: 50%;
-        left: 50%; 
-        transform: translate(-50%, -50%);
-        color:white;
-        text-align: center;
     }
 }
 
@@ -165,13 +141,10 @@ body{
 
 @media (max-width: 612px){
     .square{
-        position: absolute;
         top: 2rem;
         left: 2rem;
-        background-color:#fff;
         padding: 20px 20px;
         max-width:340px;
-        font-family:Arial, Helvetica, sans-serif;
         overflow:scroll;
     }
 

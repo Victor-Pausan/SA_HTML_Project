@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #d8dee5;
 }
 
 #page-container {
     position: relative;
-    min-height: 100vh;
+    
 }
 
 .header {
@@ -54,23 +55,20 @@ body{
 
 @media (max-width: 976px) {
     .nav {
-        display: flex;
-        align-items: center;
-        height: inherit;
-        justify-content: flex-start;
-        flex-direction: row;
         padding: 0 1rem;
     }
     
     .nav-list{
-        display:flex;
-        justify-content:flex-end;
-        margin-left:auto;
         font-size: 20px;
-        color:white;
-        list-style-type: none;
-        font-family: Arial, Helvetica, sans-serif;
         gap: 10px;
+    }
+}
+
+@media (max-width: 612px){
+    .nav-list{
+        flex-direction: column;
+        font-size: 20px;
+        gap: 4px;
     }
 }
 
@@ -100,8 +98,8 @@ body{
 
 .main-content, .contact-form, .map{
     position: relative;
-    width: 30%; /* Adjust the width as necessary */
-    margin-top: 5%; /* Adjust the margin as necessary */
+    width: 30%;
+    margin-top: 5%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -115,9 +113,9 @@ body{
     margin-left:-30px;
 }
 
-/* Position the form in the middle */
+
 .contact-form {
-    order: 2; /* Ensures that the form is placed between the content and map in the flexbox layout */
+    order: 2;
     padding: 10px 20px;
     background-color: #fff;
     max-height: 500px;
@@ -133,14 +131,14 @@ body{
     width:100%;
 }
 
-/* Styles for the form elements */
+
 form label,
 form input,
 form textarea,
 form button {
-    display: block; /* Makes form elements stack vertically */
-    width: 100%; /* Makes form elements take full width of their container */
-    margin-bottom: 10px; /* Adds space between form elements */
+    display: block;
+    width: 100%; 
+    margin-bottom: 10px;
 }
 
 form input,
@@ -163,11 +161,11 @@ form button:hover {
     background-color: #0056b3;
 }
 
-/* Responsive design for smaller screens */
+
 @media (max-width: 612px){
     .main-content, .contact-form, .map {
-        width: 100%; /* Each element takes full width */
-        margin-top: 20px; /* Adds more space between stacked elements */
+        width: 100%;
+        margin-top: 20px;
     }
 
     .map iframe{
@@ -184,7 +182,6 @@ form button:hover {
         padding: 10px;
     }
 
-    /* Reset order on smaller screens for a logical top-down layout */
     .main-content, .contact-form, .map {
         order: unset;
     }

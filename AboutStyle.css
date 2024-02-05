@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #d8dee5;
 }
 
 #page-container {
     position: relative;
-    min-height: 100vh;
+    
 }
 
 .header {
@@ -38,7 +39,7 @@ body{
 .nav-title{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 1rem; /* You can adjust this value as needed */
+    margin: 0 1rem;
 }
 
 .nav-list{
@@ -54,36 +55,19 @@ body{
 
 @media (max-width: 976px) {
     .nav {
-        display: flex;
-        align-items: center;
-        height: inherit;
-        justify-content: flex-start;
-        flex-direction: row;
         padding: 0 1rem;
     }
     
     .nav-list{
-        display:flex;
-        justify-content:flex-end;
-        margin-left:auto;
         font-size: 20px;
-        color:white;
-        list-style-type: none;
-        font-family: Arial, Helvetica, sans-serif;
         gap: 10px;
     }
 }
 
 @media (max-width: 612px){
     .nav-list{
-        display:flex;
-        justify-content:flex-end;
         flex-direction: column;
-        margin-left:auto;
         font-size: 20px;
-        color:white;
-        list-style-type: none;
-        font-family: Arial, Helvetica, sans-serif;
         gap: 4px;
     }
 }
