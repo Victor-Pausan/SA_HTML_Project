@@ -52,6 +52,11 @@ body{
     gap: 40px;
 }
 
+li a{
+    text-decoration: none; 
+    color: white;
+}
+
 @media (max-width: 976px) {
     .nav {
         padding: 0 1rem;
@@ -120,6 +125,10 @@ body{
     
 }
 
+.square a{
+    color:#000; 
+}
+
 .square-p{
     font-size: 1.2rem;
     margin: 0 0 24px;
@@ -154,14 +163,11 @@ body{
         letter-spacing: -.01em;
         line-height: 1.1;
         color: #000;
-        margin: 0 0 12px;
-        
+        margin: 0 0 12px; 
     }
     
     .square-p{
         font-size: 1rem;
-        margin: 0 0 24px;
-        text-wrap: wrap;
     }
 }
 
@@ -206,6 +212,7 @@ body{
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
+    color: black;
 }
 
 .footer-newsletter form {
