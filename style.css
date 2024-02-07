@@ -77,9 +77,17 @@ li a{
 }
 
 .main-section{
-    position:sticky;
+    position: sticky;
     text-align: center;
     display: flex;
+}
+
+.picture{
+    width: 100%;
+}
+
+.main-section picture img{
+    object-fit: cover;
 }
 
 .main-title{
@@ -93,9 +101,9 @@ li a{
     text-align: center;
 }
 
-@media (max-width: 976px) {
+@media (max-width: 712px){
     .main-title{
-        font-size: 20px;
+        font-size: 5vw;
     }
 }
 
@@ -135,39 +143,21 @@ li a{
     text-wrap: wrap;
 }
 
-@media (max-width:976px) {
+@media (max-width: 712px){
     .square{
-        left:1rem;
-        bottom:3rem;
-        padding: 50px 50px;
-        max-width:650px;
+        top: 1.5rem;
+        left: 1.5rem;
+        padding: 20px 20px;
+        max-width:300px;
+        max-height: 300px;
     }
 
     .square-title{
         font-size: 1.5rem;
     }
-}
 
-@media (max-width: 612px){
-    .square{
-        top: 2rem;
-        left: 2rem;
-        padding: 20px 20px;
-        max-width:340px;
-        overflow:scroll;
-    }
-
-    .square-title{
-        font-size: 1rem;
-        font-weight: 600;
-        letter-spacing: -.01em;
-        line-height: 1.1;
-        color: #000;
-        margin: 0 0 12px; 
-    }
-    
     .square-p{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 
