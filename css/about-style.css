@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d8dee5;
+}
+
+#page-container {
+    position: relative;
+    
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    height: 7rem;
+    background-color:#0a1a2e;
+    z-index: 999;
+}
+
+main {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h1, main h2 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+main p, main li {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-us {
+    padding: 20px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.philosophy {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.facilities {
+    padding: 20px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.facilities ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.facilities li {
+    padding: 5px 0;
+}
+
+.community {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.join-us {
+    padding: 20px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+main ul {
+    list-style-type: none;
+    padding-left: 0;
+}
