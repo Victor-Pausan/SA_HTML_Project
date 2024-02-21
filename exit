@@ -1,0 +1,84 @@
+[33mcommit 3d08eefd5837ef4291115c55b6455fdebd2600d6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: a0505d7 6f5beaa
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Wed Feb 21 13:49:54 2024 +0200
+
+    Merge branch 'master' of https://github.com/Victor-Pausan/SA_HTML_Project
+
+[33mcommit a0505d73a2af198b51b87e21b96ab5dfcbfb4009[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Wed Feb 21 13:47:55 2024 +0200
+
+    html-css-part-of-project
+
+[33mcommit 6f5beaa06d2202695e9be095b899fda23a7b2f72[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Wed Feb 21 02:48:42 2024 +0200
+
+    added new section with slideshow and js file
+
+[33mcommit 5bf57b3daefecb91e09a6a4dc9922db8ff20ec35[m[33m ([m[1;32mfeature/1-html-and-css[m[33m)[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Fri Feb 9 22:07:20 2024 +0200
+
+    code aspect improvements
+
+[33mcommit b418e19742de76a299c4fe74067a6fb5e194f2a9[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Thu Feb 8 00:40:32 2024 +0200
+
+    responsive font for nav bar
+
+[33mcommit 4b17c49e4f50fc85079e6993a81a3d4cbb6f6461[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Thu Feb 8 00:29:46 2024 +0200
+
+    responsive fixes, solved overflow issue on squares
+
+[33mcommit e7a0dae3bef85edfcf17bf3040fe861fc1bdfa2b[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Wed Feb 7 14:39:48 2024 +0200
+
+    small clean-code adjustments
+
+[33mcommit 19852ba7b120bb1b24c5d5505f7a824383d94c86[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Mon Feb 5 19:48:33 2024 +0200
+
+    -m "recommended adjustments to code"
+
+[33mcommit ca71a5da5821871ebf511c0138ff3cc400f2249b[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Sat Feb 3 15:37:47 2024 +0200
+
+    modified contact page and index page
+
+[33mcommit 7bc068d895025f344450b08c72bc37448e86c655[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Fri Feb 2 22:53:54 2024 +0200
+
+    -m "footer changes"
+
+[33mcommit afb1edcd8002aecda0caed400d2d9a1e1eb4451c[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Fri Feb 2 22:12:15 2024 +0200
+
+    Finished Contact and About pages
+
+[33mcommit 208f52ce394369d104fc6f2ca47dc8fe77f3301e[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Fri Feb 2 20:12:31 2024 +0200
+
+    Finished header and added footer
+
+[33mcommit 97a931b6d539a21ede37e5c945a70bac1b4e3c6b[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Fri Feb 2 17:13:50 2024 +0200
+
+    added 3 sections to main body
+
+[33mcommit 24eeb4c9119abd7595253cf310ff46c95c631cf8[m
+Author: Victor-Pausan <pausanvictor@gmail.com>
+Date:   Fri Feb 2 14:25:30 2024 +0200
+
+    first_commit
