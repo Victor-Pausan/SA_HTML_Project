@@ -16,6 +16,7 @@
 }
 
 .logo{
+    cursor: pointer;
     margin-right: auto;
     height: 100px;
     width: 100px;

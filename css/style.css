@@ -13,7 +13,7 @@ body {
 }
 
 .main-section {
-    position: sticky;
+    position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -47,7 +47,13 @@ body {
 }
 
 .secondary-section {
-    position: sticky;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.third-section {
+    position: relative;
     display: flex;
     justify-content: flex-start;
 }
@@ -82,6 +88,84 @@ body {
     text-wrap: wrap;
 }
 
+.fourth-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #989797;
+    background-color: #fff;
+    padding: 5rem 15rem 2rem 11rem;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fourth-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    line-height: 1.1;
+    color: #000;
+    margin: 0 0 24px;
+}
+
+.fourth-section p {
+    font-size: 1.2rem;
+    margin: 0 0 24px;
+    text-wrap: wrap;
+}
+
+.explore-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    max-width: 400px;
+}
+
+.explore-slideshow {
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.slide[data-active] {
+    display: block;
+}
+
+.explore-slideshow .btn-left,
+.explore-slideshow .btn-right {
+    padding: 0.5em;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.explore-slideshow .btn-left:hover,
+.explore-slideshow .btn-right:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.explore-slideshow .btn-left {
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    transform: translate(0px, -35%);
+}
+
+.explore-slideshow .btn-right {
+    position: absolute;
+    top: 35%;
+    right: 0%;
+    transform: translate(0px, -35%);
+}
+
 @media (max-width: 712px) {
     .secondary-section {
         align-items: end;
@@ -107,8 +191,19 @@ body {
     }
 }
 
-.third-section {
-    position: sticky;
-    display: flex;
-    justify-content: flex-start;
+@media (max-width: 800px) {
+    .fourth-section {
+        padding: 3rem 1.5rem 0 1.5rem;
+    }
+}
+
+@media (max-width: 668px) {
+    .slide {
+        max-width: 350px;
+    }
+
+    .slide img {
+        width: 350px;
+        height: auto;
+    }
 }
