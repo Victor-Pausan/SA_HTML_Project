@@ -39,20 +39,22 @@ main p, main li {
 }
 
 .about-us {
-    padding: 20px 0;
+    padding: 20px 0 10px 10px;
     border-radius: 5px;
     margin-bottom: 20px;
+    background-color: #fff;
 }
 
 .philosophy {
-    padding: 20px 0;
+    padding: 20px 0 10px 10px;
     margin-bottom: 20px;
 }
 
 .facilities {
-    padding: 20px 0;
+    padding: 20px 0 10px 10px;
     border-radius: 5px;
     margin-bottom: 20px;
+    background-color: #fff;
 }
 
 .facilities ul {
@@ -65,14 +67,15 @@ main p, main li {
 }
 
 .community {
-    padding: 20px 0;
+    padding: 20px 0 10px 10px;
     margin-bottom: 20px;
 }
 
 .join-us {
-    padding: 20px 0;
+    padding: 20px 0 10px 10px;
     border-radius: 5px;
     margin-bottom: 20px;
+    background-color: #fff;
 }
 
 main ul {

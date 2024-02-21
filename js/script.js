@@ -39,3 +39,12 @@ buttons.forEach(button => {
         buttonClick(button.className);   
     })
 });
+
+async function autoChangeSlide() {
+    while (true) {
+        await new Promise(resolve => setTimeout(resolve, 3500));
+        buttonClick("btn-right");
+    }
+}
+
+autoChangeSlide();
