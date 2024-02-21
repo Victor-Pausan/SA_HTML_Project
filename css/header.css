@@ -1,7 +1,7 @@
 .header {
     position: sticky;
     top: 0;
-    height: 7rem;
+    height: 6.5rem;
     background-color:#0a1a2e;
     z-index: 999;
 }
@@ -16,6 +16,7 @@
 }
 
 .logo{
+    display: block;
     cursor: pointer;
     margin-right: auto;
     height: 100px;
@@ -32,7 +33,7 @@
     display:flex;
     justify-content:flex-end;
     margin-left:auto;
-    font-size: 2vw;
+    font-size: 1.7vw;
     color:white;
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
