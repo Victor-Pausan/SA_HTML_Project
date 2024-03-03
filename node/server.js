@@ -46,19 +46,21 @@ app.post('/addAppointment', (req, res) => {
 
 app.delete('/deleteAppointment/:id', (req, res) => {
     fs.readFile(__dirname +"/" + "appointments.json", "utf-8" ,(err, data) => {
-        let appointments = JSON.parse(data);
+        var appointments = JSON.parse(data);
         delete appointments["app"+ req.params.id.slice(1)];
-        console.log("app"+ req.params.id.slice(1)); 
+        console.log("app"+ req.params.id.slice(1));
+        
+        fs.writeFile(__dirname + "/" + 'appointments.json', JSON.stringify(appointments), 'utf-8', (err) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+                return;
+            }
+            res.json(appointments);
+        })
     })
 
-    fs.writeFile(__dirname + "/" + 'appointments.json', JSON.stringify(appointments), 'utf-8', (err) => {
-        if (err) {
-            console.error(err);
-            res.status(500).json({ error: 'Internal Server Error' });
-            return;
-        }
-        res.json(appointments);
-    })
+    
 })
 
 var server = app.listen(port, () => {
