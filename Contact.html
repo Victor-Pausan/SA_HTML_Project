@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact-style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <title>Iron Anchor Athletics</title>
+    <script src="js/contact.js" defer></script>
+    <title>Contact Iron Anchor Athletics</title>
 </head>
+
 <body>
     <div id="page-container">
-        <header class="header"> 
+        <header class="header">
             <nav class="nav">
                 <a class="nav-logo-link" href="index.html">
-                    <img class="logo" src="/images/Logo.png" title="Always Strive and Prosper">
+                    <img class="logo" src="/images/Logo.png" title="Empower your strenght and mind">
                 </a>
                 <h1 class="nav-title">Iron Anchor Athletics</h1>
-                <ul class="nav-list" >
+                <ul class="nav-list">
                     <li>
-                        Clubs
+                        <a href="#clubs" title="Preview">Clubs</a>
                     </li>
                     <li>
-                        Membership
+                        <a href="#" title="Comming soon">Membership</a>
                     </li>
                     <li>
-                        Classes
+                        <a href="classes.html" title="Comming soon">Classes</a>
                     </li>
                     <li>
-                        <a href="Contact.html">Contact</a>
+                        <a href="contact.html" title="Comming soon">Contact</a>
                     </li>
                 </ul>
-                
+
             </nav>
         </header>
+        <div class="submission-counter">Submissions: 0</div>
         <main class="main">
             <div class="main-content">
                 <h1>CONTACT US</h1>
@@ -52,31 +56,50 @@
                 <p>+1 (207) 401 1908</p>
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.140104702882!2d-69.64560042391108!3d43.85292467109335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cad98e229b289ef%3A0x8b60318191192084!2s16%20Lakeview%20Rd%2C%20Boothbay%20Harbor%2C%20ME%2004538%2C%20Statele%20Unite%20ale%20Americii!5e0!3m2!1sro!2sro!4v1706900766848!5m2!1sro!2sro" width="450" height="500" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.140104702882!2d-69.64560042391108!3d43.85292467109335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cad98e229b289ef%3A0x8b60318191192084!2s16%20Lakeview%20Rd%2C%20Boothbay%20Harbor%2C%20ME%2004538%2C%20Statele%20Unite%20ale%20Americii!5e0!3m2!1sro!2sro!4v1706900766848!5m2!1sro!2sro"
+                    width="450" height="500" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <form class="contact-form" action="/submit_form" method="post">
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first_name" required>
-        
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last_name" required>
-        
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-        
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-        
+            <form id="form" class="contact-form" action="#" method="GET">
+                <div class="first-name">
+                    <label for="first-name">First Name:</label>
+                    <div id="first-name-error" class="error-message"></div>
+                    <input type="text" id="first-name" name="first_name">
+                </div>
+
+                <div class="last-name">
+                    <label for="last-name">Last Name:</label>
+                    <div id="last-name-error" class="error-message"></div>
+                    <input type="text" id="last-name" name="last_name">
+                </div>
+
+                <div class="email">
+                    <label for="email">Email Address:</label>
+                    <div id="email-error" class="error-message"></div>
+                    <input type="text" id="email" name="email">
+                </div>
+
+                <div class="subject">
+                    <label for="subject">Subject:</label>
+                    <div id="subject-error" class="error-message"></div>
+                    <input type="text" id="subject" name="subject">
+                </div>
+
+                <div class="message">
+                    <label for="message">Message:</label>
+                    <div id="message-error" class="error-message"></div>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
                 <button type="submit">Send Message</button>
             </form>
         </main>
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-about">
-                    <a href="About.html"><h3>About Us</h3></a>
+                    <a href="About.html">
+                        <h3>About Us</h3>
+                    </a>
                 </div>
                 <div class="footer-social-links">
                     <h3>Follow Us</h3>
@@ -95,4 +118,5 @@
         </footer>
     </div>
 </body>
+
 </html>

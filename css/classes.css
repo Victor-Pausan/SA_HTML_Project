@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d8dee5;
+}
+
+#page-container {
+    position: relative;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    min-height: 900px;
+    margin: 0 auto;
+}
+
+.title{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -3%);
+}
+
+.form {
+    padding: 10px 20px;
+    background-color: #fff;
+    max-height: 700px;
+    width: 35rem;
+    margin-top: 6rem;
+    border-radius: 2%;
+}
+
+form label,
+form input,
+form button {
+    display: block;
+    width: 100%; 
+    margin-bottom: 10px;
+}
+
+form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.delete {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid rgb(231, 50, 50);
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px #333;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.delete:hover {
+    background-color: rgb(245, 207, 207);
+    transform: scale(1.2);
+    box-shadow: 0 0 4px #111;
+    transition: .3s;
+}
+
+.schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-height: 22rem;
+    margin-right: 5rem;
+    width: 80vw;
+    overflow-y: scroll;
+    scrollbar-width:none;
+    margin: 5rem 5rem;
+}
+
+.note{
+    width:100%;
+    background-color: #fff;
+    border-radius: 2%;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.note h5{
+    padding: 7px;
+}
+
+.delete{
+    position: absolute;
+    right: 5%;
+    top: 25%;
+}
+
+@media (max-width: 628px) {
+    .main{
+        margin: 0;
+    }
+    
+    .form{
+        width: 20rem;
+    }
+
+    .schedule{
+        width: 90vw;
+        margin: 3rem 3rem;
+    }
+    
+}
