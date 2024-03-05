@@ -25,15 +25,66 @@ form.addEventListener("submit", (event) => {
         message: message
     };
 
-    if (firstName.trim() === '' || lastName.trim() === '' || email.trim() === '' || subject.trim() === '' || message.trim() === '') {
-        alert("Please fill in all fields.");
-        return;
+    const appendErrorMessage = (message, className) => {
+        let errorDiv = document.getElementById(`${className}-error`);
+        errorDiv.innerHTML = message;
+        
+    };
+
+    const deleteErrorMessage = (className) => {
+        let errorDiv = document.getElementById(`${className}-error`);
+        errorDiv.innerHTML = ''; 
     }
+
+    if (firstName.trim() === '') {
+        firstNameError = "Please fill in first name.";
+        appendErrorMessage(firstNameError, "first-name");
+    }
+    else{
+        deleteErrorMessage("first-name");
+    }
+    
+    if (lastName.trim() === '') {
+        lastNameError = "Please fill in last name.";
+        appendErrorMessage(lastNameError, "last-name");
+    }
+    else{
+        deleteErrorMessage("last-name");
+    }
+    
+    if (email.trim() === '') {
+        emailError = "Please fill in email.";
+        appendErrorMessage(emailError, "email");
+    }
+    else{
+        deleteErrorMessage("email");
+    }
+    
+    if (subject.trim() === '') {
+        subjectError = "Please fill in subject.";
+        appendErrorMessage(subjectError, "subject");
+    }
+    else{
+        deleteErrorMessage("subject");
+    }
+    
+    if (message.trim() === '') {
+        messageError = "Please fill in message.";
+        appendErrorMessage(messageError, "message");
+    }
+    else{
+        deleteErrorMessage("message");
+    }
+    
 
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     if(!emailRegex.test(email)){
-        alert("Please enter an valid email.")
+        emailRegexError = "Please enter a valid email.";
+        appendErrorMessage(emailRegexError, "email");
         return;
+    }
+    else{
+        deleteErrorMessage("email");
     }
 
     let submissions = JSON.parse(localStorage.getItem("submissions")) || [];

@@ -91,8 +91,10 @@ function updateAppointmentsList(){
 
 updateAppointmentsList();
 
-document.addEventListener('click', event => {
-    if (event.target.classList.contains('remove')) {
+appSection = document.querySelector('.schedule');
+appSection.addEventListener("click", (event) => {
+    if(event.target.classList.contains('remove')){
+        event.preventDefault();
         let param = event.target.id.slice(1);
         console.log(param);
         fetch(`http://localhost:8080/deleteAppointment/:${param}`, {

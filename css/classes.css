@@ -16,7 +16,6 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -116,4 +115,20 @@ form button:hover {
     position: absolute;
     right: 5%;
     top: 25%;
+}
+
+@media (max-width: 628px) {
+    .main{
+        margin: 0;
+    }
+    
+    .form{
+        width: 20rem;
+    }
+
+    .schedule{
+        width: 90vw;
+        margin: 3rem 3rem;
+    }
+    
 }

@@ -62,7 +62,7 @@ body{
     order: 2;
     padding: 10px 20px;
     background-color: #fff;
-    max-height: 500px;
+    max-height:fit-content;
 }
 
 .map{
@@ -129,4 +129,10 @@ form button {
 
 form button:hover {
     background-color: #0056b3;
+}
+
+.error-message{
+    color: darkred;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
 }
