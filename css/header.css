@@ -1,11 +1,11 @@
 .header {
     position: sticky;
     top: 0;
-    background-color:#0a1a2e;
+    background-color: #0a1a2e;
     z-index: 999;
 }
 
-.logo{
+.logo {
     display: block;
     cursor: pointer;
     margin-right: auto;
@@ -13,7 +13,7 @@
     width: 100px;
 }
 
-.nav-title{
+.nav-title {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin-right: auto;
@@ -21,8 +21,8 @@
 
 /* Bootstrap overrides */
 
-.navbar{
-    background-color:#0a1a2e;
+.navbar {
+    background-color: #0a1a2e;
     color: white;
     margin: 0 1.5rem;
     --bs-navbar-toggler-border-color: #3f6082 !important;
@@ -32,6 +32,7 @@
     color: #fff !important;
     font-size: 1.5rem;
 }
+
 .navbar-toggler {
     color: #fff !important;
 }
@@ -39,16 +40,16 @@
 /* Bootstrap overrides */
 
 @media (max-width: 1035px) {
-    .nav-list{
+    .nav-list {
         font-size: 20px;
         gap: 10px;
     }
 
-    .navbar{
+    .navbar {
         margin: 0 0;
     }
 
-    .container-fluid{
+    .container-fluid {
         padding: 0 0;
     }
 }
@@ -59,14 +60,14 @@
     }
 }
 
-@media (max-width: 612px){
-    .nav-list{
+@media (max-width: 612px) {
+    .nav-list {
         flex-direction: column;
         font-size: 20px;
         gap: 4px;
     }
 
-    .nav-title{
-        font-size: 1.3rem;
+    .nav-title {
+        font-size: 1.2rem;
     }
 }

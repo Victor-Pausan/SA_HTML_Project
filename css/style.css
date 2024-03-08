@@ -16,7 +16,7 @@ body {
     position: relative;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -29,21 +29,6 @@ body {
 
 .main-section picture img {
     object-fit: cover;
-}
-
-.main-title {
-    position: absolute;
-    font-size: 4vw;
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 10em;
-    color: white;
-    text-align: center;
-}
-
-@media (max-width: 712px) {
-    .main-title {
-        font-size: 5vw;
-    }
 }
 
 .secondary-section {
@@ -75,7 +60,6 @@ body {
     line-height: 1.1;
     color: #000;
     margin: 0 0 24px;
-
 }
 
 .square a {
@@ -94,8 +78,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     background-color: #fff;
-    padding: 5rem 15rem 2rem 11rem;
-    margin: 0 auto;
+    padding: 5rem 0 2rem 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -120,12 +103,14 @@ body {
     align-items: flex-start;
     margin-bottom: 3rem;
     max-width: 400px;
+    margin-left: 5rem;
 }
 
 .explore-slideshow {
     position: relative;
-    width: 600px;
-    height: 500px;
+    width: 600px !important;
+    height: 500px !important;
+    margin-right: 5rem;
 }
 
 .content {
@@ -151,54 +136,75 @@ body {
     grid-row: 2 / 3;
 }
 
-.slide {
+/* BOOTSTRAP Overrides */
+
+.card-body{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5rem;
+    margin-top: 5rem;
 }
 
-.slide[data-active] {
-    opacity: 1;
+.card-title{
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: -.02em;
+    line-height: 1;
+    text-transform: uppercase;
+    color:#fff !important;
 }
 
-.slide img{
-    width: 600px;
+.card-text{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.2;
+    color:#fff;
+    margin: 2rem 0;
 }
 
-.explore-slideshow .btn-left,
-.explore-slideshow .btn-right {
-    padding: 0.5em;
-    background: none;
-    border: none;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.1);
-    font-size: 1.5rem;
-    font-weight: bolder;
-    cursor: pointer;
-    z-index: 2;
+.btn{
+    border-radius: 0% !important;
 }
 
-.explore-slideshow .btn-left:hover,
-.explore-slideshow .btn-right:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+@media (max-width: 964px){
+    .card-body{
+        margin-left: 1rem;
+    }
 }
 
-.explore-slideshow .btn-left {
-    position: absolute;
-    top: 35%;
-    left: 0%;
-    transform: translate(0px, -35%);
+@media (max-width: 900px){
+    .card-title{
+        font-size: 3rem;
+    }
 }
 
-.explore-slideshow .btn-right {
-    position: absolute;
-    top: 35%;
-    right: 0%;
-    transform: translate(0px, -35%);
+@media (max-width: 515px){
+    .card-title{
+        font-size: 2.2rem;
+    }
+
+    .card-text{
+        font-size: 1.8rem;
+    }
+}
+
+/* BOOTSTRAP Overrides */
+
+@media (max-width: 1024px) {
+    .fourth-section {
+        padding: 3rem 0 0 0;
+    }
+
+    .explore-slideshow{
+        margin-right: 0;
+    }
+
+    .explore-text{
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 712px) {
@@ -226,24 +232,3 @@ body {
     }
 }
 
-@media (max-width: 1024px) {
-    .fourth-section {
-        padding: 3rem 1.5rem 0 1.5rem;
-    }
-}
-
-@media (max-width: 668px) {
-    .explore-slideshow{
-        max-width: 350px;
-        max-height: 450px;
-    }
-    
-    .slide {
-        max-width: 350px;
-    }
-
-    .slide img {
-        width: 350px;
-        height: auto;
-    }
-}
