@@ -13,14 +13,6 @@ body{
     
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    height: 7rem;
-    background-color:#0a1a2e;
-    z-index: 999;
-}
-
 main {
     font-family: 'Arial', sans-serif;
     max-width: 1200px;

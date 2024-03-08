@@ -1,18 +1,8 @@
 .header {
     position: sticky;
     top: 0;
-    height: 6.5rem;
     background-color:#0a1a2e;
     z-index: 999;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    height: inherit;
-    justify-content: flex-start;
-    flex-direction: row;
-    padding: 0 4rem;
 }
 
 .logo{
@@ -26,33 +16,46 @@
 .nav-title{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0 1rem;
+    margin-right: auto;
 }
 
-.nav-list{
-    display:flex;
-    justify-content:flex-end;
-    margin-left:auto;
-    font-size: 1.7vw;
-    color:white;
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    gap: 40px;
-}
+/* Bootstrap overrides */
 
-li a{
-    text-decoration: none; 
+.navbar{
+    background-color:#0a1a2e;
     color: white;
+    margin: 0 1.5rem;
+    --bs-navbar-toggler-border-color: #3f6082 !important;
 }
 
-@media (max-width: 976px) {
-    .nav {
-        padding: 0 1rem;
-    }
-    
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.5rem;
+}
+.navbar-toggler {
+    color: #fff !important;
+}
+
+/* Bootstrap overrides */
+
+@media (max-width: 1035px) {
     .nav-list{
         font-size: 20px;
         gap: 10px;
+    }
+
+    .navbar{
+        margin: 0 0;
+    }
+
+    .container-fluid{
+        padding: 0 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        margin-left: 1rem;
     }
 }
 
@@ -61,5 +64,9 @@ li a{
         flex-direction: column;
         font-size: 20px;
         gap: 4px;
+    }
+
+    .nav-title{
+        font-size: 1.3rem;
     }
 }
