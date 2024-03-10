@@ -106,39 +106,9 @@ body {
     margin-left: 5rem;
 }
 
-.explore-slideshow {
-    position: relative;
-    width: 600px !important;
-    height: 500px !important;
-    margin-right: 5rem;
-}
-
-.content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 10px;
-}
-
-.content>h2 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.content .temperature {
-    justify-self: end;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-.content p {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-}
-
 /* BOOTSTRAP Overrides */
 
-.card-body{
+.card-body {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -147,46 +117,53 @@ body {
     margin-top: 5rem;
 }
 
-.card-title{
+.card-title {
     font-size: 5rem;
     font-weight: 600;
     letter-spacing: -.02em;
     line-height: 1;
     text-transform: uppercase;
-    color:#fff !important;
+    color: #fff !important;
 }
 
-.card-text{
+.card-text {
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: normal;
     line-height: 1.2;
-    color:#fff;
+    color: #fff;
     margin: 2rem 0;
 }
 
-.btn{
+.btn {
     border-radius: 0% !important;
 }
 
-@media (max-width: 964px){
-    .card-body{
+.explore-slideshow {
+    position: relative;
+    width: 600px !important;
+    height: 550px !important;
+    margin-right: 5rem;
+}
+
+@media (max-width: 964px) {
+    .card-body {
         margin-left: 1rem;
     }
 }
 
-@media (max-width: 900px){
-    .card-title{
+@media (max-width: 900px) {
+    .card-title {
         font-size: 3rem;
     }
 }
 
-@media (max-width: 515px){
-    .card-title{
+@media (max-width: 515px) {
+    .card-title {
         font-size: 2.2rem;
     }
 
-    .card-text{
+    .card-text {
         font-size: 1.8rem;
     }
 }
@@ -198,11 +175,11 @@ body {
         padding: 3rem 0 0 0;
     }
 
-    .explore-slideshow{
+    .explore-slideshow {
         margin-right: 0;
     }
 
-    .explore-text{
+    .explore-text {
         margin-left: 0;
     }
 }
@@ -231,4 +208,3 @@ body {
         font-size: 1.1rem;
     }
 }
-

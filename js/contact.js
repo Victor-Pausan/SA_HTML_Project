@@ -3,7 +3,7 @@ const form = document.getElementById("form");
 function updateSubmissionsCounter(){
     const submissions = JSON.parse(localStorage.getItem("submissions")) || []
     const counter = document.querySelector(".submission-counter");
-    counter.innerHTML = `Submissions: ${Object.keys(submissions).length}`;
+    counter.innerHTML = `<h2>Questions: ${Object.keys(submissions).length}</h2>`;
 }
 
 updateSubmissionsCounter();
@@ -27,13 +27,16 @@ form.addEventListener("submit", (event) => {
 
     const appendErrorMessage = (message, className) => {
         let errorDiv = document.getElementById(`${className}-error`);
-        errorDiv.innerHTML = message;
-        
+        errorDiv.innerHTML = message
+        let inputError = document.getElementById(className);
+        inputError.className += " is-invalid";
     };
 
     const deleteErrorMessage = (className) => {
         let errorDiv = document.getElementById(`${className}-error`);
-        errorDiv.innerHTML = ''; 
+        errorDiv.innerHTML = ""; 
+        let inputError = document.getElementById(className);
+        inputError.className = "form-control";
     }
 
     if (firstName.trim() === '') {
